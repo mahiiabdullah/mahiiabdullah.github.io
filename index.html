@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahi Abdullah - Full Stack Developer specializing in Python, Flutter, and Web Development. View my projects and get in touch.">
+    <meta name="keywords" content="Mahi Abdullah, Developer, Portfolio, Python, Flutter, Web Development">
+    <meta name="author" content="Mahi Abdullah">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Mahi Abdullah | Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in Python, Flutter, and Web Development.">
+    <meta property="og:type" content="website">
+    
+    <title>Mahi Abdullah | Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Animated Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Mahi</span>
+                <span class="logo-slash">/</span>
+                <span class="logo-bracket">&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="https://github.com/mahiiabdullah" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting">
+                    <span class="wave">👋</span> Hello, I'm  
+                </p>
+                <h1 class="name">
+                    <span class="first-name">Mahi</span>
+                    <span class="last-name">Abdullah</span>
+                </h1>
+                <div class="typing-container">
+                    <span class="static-text">I'm a&nbsp;</span>
+                    <span class="dynamic-text" id="typingText"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate developer crafting digital experiences with code. 
+                    I build web applications, mobile apps, and everything in between.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Passion</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">developer.js</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+    <span class="code-property">name</span>: <span class="code-string">"Mahi Abdullah"</span>,
+    <span class="code-property">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+    <span class="code-property">skills</span>: [
+        <span class="code-string">"Python"</span>, 
+        <span class="code-string">"Flutter"</span>, 
+        <span class="code-string">"JavaScript"</span>
+    ],
+    <span class="code-property">passion</span>: <span class="code-string">"Building amazing things"</span>,
+    <span class="code-method">code</span>: () => {
+        <span class="code-keyword">return</span> <span class="code-string">"Creating the future!"</span>;
+    }
+};</code></pre>
+                    </div>
+                </div>
+                <div class="floating-icons">
+                    <div class="floating-icon icon-1"><i class="fab fa-python"></i></div>
+                    <div class="floating-icon icon-2"><i class="fab fa-flutter"></i></div>
+                    <div class="floating-icon icon-3"><i class="fab fa-js-square"></i></div>
+                    <div class="floating-icon icon-4"><i class="fab fa-html5"></i></div>
+                    <div class="floating-icon icon-5"><i class="fab fa-css3-alt"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Developer Who Loves Creating</h3>
+                    <p>
+                        I'm a passionate developer with a love for creating elegant solutions to complex problems. 
+                        My journey in coding started with curiosity and has evolved into a full-fledged passion 
+                        for building applications that make a difference.
+                    </p>
+                    <p>
+                        I enjoy working with various technologies and frameworks, from Flutter for mobile apps 
+                        to Python for backend development. I believe in writing clean, maintainable code and 
+                        creating user experiences that are both functional and beautiful.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-rocket"></i>
+                            <span>Fast Learner</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Problem Solver</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-heart"></i>
+                            <span>Passionate</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <span>Team Player</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/about&gt;</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Flask, Data Analysis, Automation</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon flutter">
+                        <i class="fab fa-flutter"></i>
+                    </div>
+                    <h3>Flutter</h3>
+                    <p>Cross-platform Mobile Apps</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon dart">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Dart</h3>
+                    <p>Flutter Development</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon html">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML/CSS</h3>
+                    <p>Web Development, Responsive Design</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon js">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Frontend Development</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-tilt>
+                    <div class="skill-icon cpp">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++</h3>
+                    <p>Data Structures, Algorithms</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/skills&gt;</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">What I've been working on</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Python">Python</button>
+                <button class="filter-btn" data-filter="Dart">Flutter</button>
+                <button class="filter-btn" data-filter="HTML">Web</button>
+                <button class="filter-btn" data-filter="C++">C++</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here -->
+                <div class="loading-projects">
+                    <div class="loader"></div>
+                    <p>Loading projects from GitHub...</p>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/projects&gt;</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>
+                    <p>
+                        Have a project in mind? Looking for collaboration? 
+                        Or just want to say hi? Feel free to reach out!
+                    </p>
+                    <div class="contact-links">
+                        <a href="https://github.com/mahiiabdullah" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">@mahiiabdullah</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mahi-abdullah-151599202/" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">Mahi Abdullah</span>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/mahiabdullah.03" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Facebook</span>
+                                <span class="contact-value">mahiabdullah.03</span>
+                            </div>
+                        </a>
+                        <a href="https://x.com/Abdullah590106" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fab fa-x-twitter"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">X (Twitter)</span>
+                                <span class="contact-value">@Abdullah590106</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                            <span class="focus-border"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/contact&gt;</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Mahi</span>
+                    <span class="logo-slash">/</span>
+                    <span class="logo-bracket">&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Crafted with <span class="heart">❤️</span> and lots of <span class="coffee">☕</span>
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/mahiiabdullah" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahi-abdullah-151599202/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/mahiabdullah.03" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/Abdullah590106" target="_blank" aria-label="X Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mahi Abdullah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
