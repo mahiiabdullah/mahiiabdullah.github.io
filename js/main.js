@@ -3,7 +3,7 @@
 // ============================================
 const CONFIG = {
     githubUsername: 'mahiiabdullah',
-    typingWords: ['Full Stack Developer', 'Flutter Developer', 'Python Enthusiast', 'Problem Solver', 'Creative Coder'],
+    typingWords: ['Competitive Programmer', 'Flutter Developer', 'Python Enthusiast', 'Problem Solver', 'Full Stack Developer'],
     typingSpeed: 100,
     deletingSpeed: 50,
     pauseDuration: 2000
@@ -315,7 +315,7 @@ function initTypingEffect() {
 // SCROLL ANIMATIONS
 // ============================================
 function initScrollAnimations() {
-    const revealElements = document.querySelectorAll('.section-header, .about-content, .skill-card, .contact-content, .highlight');
+    const revealElements = document.querySelectorAll('.section-header, .about-content, .skill-card, .certificate-card, .contact-content, .highlight');
     
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -414,11 +414,9 @@ async function loadGitHubProjects() {
 }
 
 function displayProjects(repos) {
-    // Filter out forked repos and the github.io repo
+    // Filter out only the github.io repo (portfolio itself)
     const filteredRepos = repos.filter(repo => 
-        !repo.fork && 
-        !repo.name.includes('.github.io') &&
-        repo.name !== 'Portfolio'
+        !repo.name.includes('.github.io')
     );
     
     if (filteredRepos.length === 0) {
@@ -429,6 +427,9 @@ function displayProjects(repos) {
         `;
         return;
     }
+    
+    // Sort by most recently updated first
+    filteredRepos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
     
     elements.projectsGrid.innerHTML = filteredRepos.map((repo, index) => {
         const description = repo.description || 'A project by Mahi Abdullah';
@@ -468,8 +469,9 @@ function displayProjects(repos) {
     
     // Update project count in stats
     const projectCountEl = document.querySelector('.stat-number[data-target]');
-    if (projectCountEl && projectCountEl.getAttribute('data-target') === '6') {
+    if (projectCountEl) {
         projectCountEl.setAttribute('data-target', filteredRepos.length.toString());
+        projectCountEl.textContent = filteredRepos.length.toString();
     }
 }
 

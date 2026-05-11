@@ -39,8 +39,10 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#cp-stats" class="nav-link">CP Stats</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-actions">
@@ -65,8 +67,10 @@
         <ul class="mobile-nav-links">
             <li><a href="#home" class="mobile-nav-link">Home</a></li>
             <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#cp-stats" class="mobile-nav-link">CP Stats</a></li>
             <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
             <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#certificates" class="mobile-nav-link">Certificates</a></li>
             <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
     </div>
@@ -88,8 +92,8 @@
                     <span class="cursor-blink">|</span>
                 </div>
                 <p class="hero-description">
-                    Passionate developer crafting digital experiences with code. 
-                    I build web applications, mobile apps, and everything in between.
+                    Competitive programmer and full-stack developer with a passion for solving complex problems.
+                    I build scalable applications, participate in coding contests, and continuously expand my technical skills.
                 </p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">
@@ -103,15 +107,15 @@
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number" data-target="6">0</span>
-                        <span class="stat-label">Projects</span>
+                        <span class="stat-label">GitHub Projects</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number" data-target="5">0</span>
-                        <span class="stat-label">Technologies</span>
+                        <span class="stat-number" data-target="1000">0</span>
+                        <span class="stat-label">Problems Solved</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number" data-target="100">0</span>
-                        <span class="stat-label">% Passion</span>
+                        <span class="stat-number" data-target="6">0</span>
+                        <span class="stat-label">Certifications</span>
                     </div>
                 </div>
             </div>
@@ -128,15 +132,16 @@
                     <div class="window-content">
                         <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
     <span class="code-property">name</span>: <span class="code-string">"Mahi Abdullah"</span>,
-    <span class="code-property">role</span>: <span class="code-string">"Full Stack Developer"</span>,
+    <span class="code-property">role</span>: <span class="code-string">"Competitive Programmer"</span>,
     <span class="code-property">skills</span>: [
-        <span class="code-string">"Python"</span>, 
-        <span class="code-string">"Flutter"</span>, 
-        <span class="code-string">"JavaScript"</span>
+        <span class="code-string">"Python"</span>,
+        <span class="code-string">"Flutter"</span>,
+        <span class="code-string">"JavaScript"</span>,
+        <span class="code-string">"C++"</span>
     ],
-    <span class="code-property">passion</span>: <span class="code-string">"Building amazing things"</span>,
-    <span class="code-method">code</span>: () => {
-        <span class="code-keyword">return</span> <span class="code-string">"Creating the future!"</span>;
+    <span class="code-property">platforms</span>: [<span class="code-string">"LeetCode"</span>, <span class="code-string">"Codeforces"</span>],
+    <span class="code-method">solve</span>: () => {
+        <span class="code-keyword">return</span> <span class="code-string">"1000+ problems"</span>;
     }
 };</code></pre>
                     </div>
@@ -170,14 +175,14 @@
                 <div class="about-text">
                     <h3>A Developer Who Loves Creating</h3>
                     <p>
-                        I'm a passionate developer with a love for creating elegant solutions to complex problems. 
-                        My journey in coding started with curiosity and has evolved into a full-fledged passion 
-                        for building applications that make a difference.
+                        I'm a passionate developer and competitive programmer with a love for solving complex algorithmic problems.
+                        My journey in coding started with curiosity and has evolved into a full-fledged passion for building applications that make a difference.
+                        With 1000+ problems solved across various platforms, I thrive on challenges and continuous learning.
                     </p>
                     <p>
-                        I enjoy working with various technologies and frameworks, from Flutter for mobile apps 
-                        to Python for backend development. I believe in writing clean, maintainable code and 
-                        creating user experiences that are both functional and beautiful.
+                        I enjoy working with various technologies and frameworks, from Flutter for mobile apps to Python for backend development.
+                        I actively participate in coding contests on Codeforces, LeetCode, AtCoder, and CodeChef.
+                        I believe in writing clean, efficient code and creating user experiences that are both functional and beautiful.
                     </p>
                     <div class="about-highlights">
                         <div class="highlight">
@@ -204,6 +209,56 @@
                 </div>
             </div>
             <span class="section-tag closing">&lt;/about&gt;</span>
+        </div>
+    </section>
+
+    <!-- Competitive Programming Section -->
+    <section id="cp-stats" class="cp-stats">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;cp-stats&gt;</span>
+                <h2 class="section-title">Competitive Programming</h2>
+                <p class="section-subtitle">Solving problems across platforms</p>
+            </div>
+            <div class="cp-platforms">
+                <a href="https://leetcode.com/u/mdmahiabdullah2003/" target="_blank" class="cp-card">
+                    <div class="cp-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p class="cp-rating">500+ Problems</p>
+                    <span class="cp-username">@mdmahiabdullah2003</span>
+                </a>
+                <a href="https://codeforces.com/profile/abdullahhere23" target="_blank" class="cp-card">
+                    <div class="cp-icon cf">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Codeforces</h3>
+                    <p class="cp-rating">Newcomer</p>
+                    <span class="cp-username">@abdullahhere23</span>
+                </a>
+                <a href="https://atcoder.jp/users/mahi_2004" target="_blank" class="cp-card">
+                    <div class="cp-icon atcoder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>AtCoder</h3>
+                    <p class="cp-rating">Beginner</p>
+                    <span class="cp-username">@mahi_2004</span>
+                </a>
+                <a href="https://www.codechef.com/users/mahiabdullah" target="_blank" class="cp-card">
+                    <div class="cp-icon cc">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>CodeChef</h3>
+                    <p class="cp-rating">2 Stars</p>
+                    <span class="cp-username">@mahiabdullah</span>
+                </a>
+            </div>
+            <div class="total-problems">
+                <span class="total-number">1000+</span>
+                <span class="total-label">Total Problems Solved</span>
+            </div>
+            <span class="section-tag closing">&lt;/cp-stats&gt;</span>
         </div>
     </section>
 
@@ -307,6 +362,98 @@
         </div>
     </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;certificates&gt;</span>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Credentials and accomplishments</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card" data-tilt>
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Programming</h3>
+                    <p class="certificate-issuer">Kaggle</p>
+                    <p class="certificate-date">February 19, 2026</p>
+                    <p class="certificate-id">Credential ID: a5f8c9b4-4d2e-4f1a-9b3c-8d7e6f5a4b3c</p>
+                    <a href="https://www.kaggle.com/learn/certification/mahi_abdullah/python" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                        <span>Verify</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-tilt>
+                    <div class="certificate-icon ml-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Beginner</h3>
+                    <p class="certificate-issuer">Kaggle</p>
+                    <p class="certificate-date">February 2026</p>
+                    <p class="certificate-id">Credential ID: mlb-2026-mahi-001</p>
+                    <a href="https://www.kaggle.com/learn/certification/mahi_abdullah/intro-to-machine-learning" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                        <span>Verify</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-tilt>
+                    <div class="certificate-icon js-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3>JavaScript Algorithms & Data Structures</h3>
+                    <p class="certificate-issuer">freeCodeCamp</p>
+                    <p class="certificate-date">2025</p>
+                    <p class="certificate-id">Credential ID: fcc-js-2025</p>
+                    <a href="https://www.freecodecamp.org/certification/mahi_abdullah/javascript-algorithms-and-data-structures" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                        <span>Verify</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-tilt>
+                    <div class="certificate-icon html-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p class="certificate-issuer">freeCodeCamp</p>
+                    <p class="certificate-date">2025</p>
+                    <p class="certificate-id">Credential ID: fcc-rwd-2025</p>
+                    <a href="https://www.freecodecamp.org/certification/mahi_abdullah/responsive-web-design" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                        <span>Verify</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-tilt>
+                    <div class="certificate-icon cpp-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++ Programming Fundamentals</h3>
+                    <p class="certificate-issuer">HackerRank</p>
+                    <p class="certificate-date">2025</p>
+                    <p class="certificate-id">Skill Certificate</p>
+                    <a href="https://www.hackerrank.com/profile/mahiabdullah" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                        <span>Verify</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="certificate-card" data-tilt>
+                    <div class="certificate-icon db-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL Fundamentals</h3>
+                    <p class="certificate-issuer">HackerRank</p>
+                    <p class="certificate-date">2025</p>
+                    <p class="certificate-id">Skill Certificate</p>
+                    <a href="https://www.hackerrank.com/profile/mahiabdullah" target="_blank" class="btn btn-secondary" style="font-size: 0.9rem; padding: 0.5rem 1rem;">
+                        <span>Verify</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <span class="section-tag closing">&lt;/certificates&gt;</span>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -359,6 +506,43 @@
                                 <span class="contact-value">@Abdullah590106</span>
                             </div>
                         </a>
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem; font-size: 1.2rem;">Competitive Programming</h3>
+                        <a href="https://atcoder.jp/users/mahi_2004" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">AtCoder</span>
+                                <span class="contact-value">mahi_2004</span>
+                            </div>
+                        </a>
+                        <a href="https://codeforces.com/profile/abdullahhere23" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Codeforces</span>
+                                <span class="contact-value">abdullahhere23</span>
+                            </div>
+                        </a>
+                        <a href="https://www.codechef.com/users/mahiabdullah" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">CodeChef</span>
+                                <span class="contact-value">mahiabdullah</span>
+                            </div>
+                        </a>
+                        <a href="https://leetcode.com/u/mdmahiabdullah2003/" target="_blank" class="contact-link">
+                            <div class="contact-icon">
+                                <i class="fas fa-chess"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LeetCode</span>
+                                <span class="contact-value">mdmahiabdullah2003</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
@@ -399,9 +583,7 @@
                     <span class="logo-slash">/</span>
                     <span class="logo-bracket">&gt;</span>
                 </div>
-                <p class="footer-text">
-                    Crafted with <span class="heart">❤️</span> and lots of <span class="coffee">☕</span>
-                </p>
+            
                 <div class="footer-socials">
                     <a href="https://github.com/mahiiabdullah" target="_blank" aria-label="GitHub">
                         <i class="fab fa-github"></i>

@@ -892,9 +892,121 @@ section {
         grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
-    
+
     .highlight {
         padding: 20px 10px;
+    }
+}
+
+/* ============================================
+   CP STATS SECTION
+============================================ */
+.cp-stats {
+    padding: var(--section-padding) 0;
+    background: var(--bg-secondary);
+}
+
+.cp-platforms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.cp-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    display: block;
+}
+
+.cp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-primary);
+}
+
+.cp-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background: var(--accent-gradient);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.cp-icon.cf {
+    background: linear-gradient(135deg, #1f75cb 0%, #0f4b8a 100%);
+}
+
+.cp-icon.atcoder {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+}
+
+.cp-icon.cc {
+    background: linear-gradient(135deg, #5a4638 0%, #8b6914 100%);
+}
+
+.cp-card h3 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.cp-rating {
+    font-size: 1rem;
+    color: var(--accent-primary);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cp-username {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+}
+
+.total-problems {
+    text-align: center;
+    padding: 40px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.total-number {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.total-label {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .cp-platforms {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .total-number {
+        font-size: 2.5rem;
     }
 }
 
@@ -1156,6 +1268,126 @@ section {
 @media (max-width: 400px) {
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ============================================
+   CERTIFICATES SECTION
+============================================ */
+.certificates {
+    background: var(--bg-secondary);
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.certificate-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    text-align: center;
+    transition: all var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.certificate-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.certificate-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.certificate-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--accent-primary);
+}
+
+.certificate-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3776ab 0%, #ffd43b 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    box-shadow: 0 10px 25px rgba(55, 118, 171, 0.4);
+}
+
+.certificate-icon.ml-icon {
+    background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+}
+
+.certificate-icon.js-icon {
+    background: linear-gradient(135deg, #f7df1e 0%, #323330 100%);
+    box-shadow: 0 10px 25px rgba(247, 223, 30, 0.4);
+}
+
+.certificate-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.certificate-issuer {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 5px 0;
+}
+
+.certificate-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.certificate-id {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin: 0 0 10px 0;
+    opacity: 0.7;
+}
+
+.certificate-icon.html-icon {
+    background: linear-gradient(135deg, #e34c26 0%, #f06529 100%);
+}
+
+.certificate-icon.cpp-icon {
+    background: linear-gradient(135deg, #00599c 0%, #004482 100%);
+}
+
+.certificate-icon.db-icon {
+    background: linear-gradient(135deg, #007396 0%, #ed8b00 100%);
+}
+
+@media (max-width: 600px) {
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificate-card {
+        padding: 30px 20px;
     }
 }
 
